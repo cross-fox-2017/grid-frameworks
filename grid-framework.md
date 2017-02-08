@@ -1,7 +1,7 @@
 # Grid Systems
 ## Jeet
 
-Jeet grid system is dynamic. We can set it to be a 12 column grid or 24 column grid even 5! ```column(1/12), column(1/24), column(1/5)```To make a responsive web design with jeed is easy. Example code is provided below.
+Jeet grid system is dynamic. We can set it to be a 12 column grid or 24 column grid even 5! ```column(1/12), column(1/24), column(1/5)```To make a responsive web design & semantic HTML5 markup with jeed is easy and clean. Example code is provided below.
 
 Bootstrap
 ```
@@ -31,7 +31,8 @@ article {
 }
 ```
 
-You can see the difference if were using Jeet Grid System the code is more cleaner. We can just set the column straight to the element in HTML. Jeet can use 2 css preprocessor scss and stylus. I personally try to use Jeet grid system in my future project.
+You can see the difference if were using Jeet Grid System the code is more cleaner. We can just set the column straight to the element in HTML. Jeet can use 2 css preprocessor scss and stylus. I personally try to learn and use Jeet grid system in my future project.
+[Jeet Official Github provided with documentation](https://github.com/mojotech/jeet "Google's Homepage")
 
 ## Mueller
 
@@ -79,4 +80,25 @@ Gridiculous
 ```
 
 ## Unsemantic
-Unsemantic use
+
+Unsemantic it's just the same with Gridiculous and Bootstrap only the class name difference. Unsemantic is the successor from the 960.gs (The first grid system for open source)
+
+## Bourbon NEAT
+
+Neat Grid system is nearly the same with Jeet Grid Systems. You can see the code example below
+
+```
+<section>
+  <header>What is it about?</header>
+  <section>Neat is an open source semantic grid framework built with Sass…</section>
+</section>
+
+// Enter Neat
+section {
+  @include outer-container;
+  header { @include span-columns(3); }
+  section { @include span-columns(9); }
+}
+```
+The documentation is preety *Neat* you can see it in [here](http://thoughtbot.github.io/neat-docs/latest/) and examples website [here](http://neat.bourbon.io/examples/).
+I personally wanted to try this after using Jeet because the HTML code is much more cleaner.
